@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>AsseTrack - Lista de Ativos</title>
+    <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+
+    <div class="tela-sistema">
+
+        
+        <nav class="menu-lateral">
+            <div class="logo">
+                <h2>AsseTrack</h2>
+                <p>Gestão de ativos</p>
+            </div>
+            
+            <ul class="lista-menu">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <!-- Agora a classe "ativo" (que dá a cor azul) está no "Lista de ativos" -->
+                <li><a href="lista-ativos.html" class="ativo">Lista de ativos</a></li>
+                <li><a href="#">Cadastro de ativo</a></li>
+                <li><a href="#">Mapa de ativos (Links)</a></li>
+                <li><a href="#">Histórico</a></li>
+            </ul>
+        </nav>
+
+        
+        <main class="conteudo-principal">
+            
+            <header class="cabecalho">
+                <h2>Lista de ativos</h2>
+                <div class="usuario">Guilherme</div>
+            </header>
+
+            
+            <div class="barra-pesquisa">
+                <input type="text" placeholder="Buscar por nome, patrimônio...">
+                <select>
+                    <option>Todos os status</option>
+                    <option>Localizado</option>
+                    <option>Sem localização</option>
+                </select>
+                <button class="btn-novo">+ Novo ativo</button>
+            </div>
+
+            
+            <div class="caixa-tabela">
+                <table class="tabela-ativos">
+                    
+                    
+                    <thead>
+                        <tr>
+                            <th>Ativo</th>
+                            <th>Categoria</th>
+                            <th>Responsável</th>
+                            <th>Status</th>
+                            <th>Última localização</th>
+                        </tr>
+                    </thead>
+
+                    
+                    <tbody>
+                        
+                        <!-- Linha 1 -->
+                        <tr>
+                            <td>
+                                <strong>Compressor de Ar Industrial</strong><br>
+                                <span class="patrimonio">PAT-2048</span>
+                            </td>
+                            <td>Manutenção</td>
+                            <td>Mariana Costa</td>
+                            <td><span class="badge badge-verde">Localizado</span></td>
+                            <td>Galpão 02 - Docas</td>
+                        </tr>
+
+                        <!-- Linha 2 -->
+                        <tr>
+                            <td>
+                                <strong>Projetor Epson PowerLite</strong><br>
+                                <span class="patrimonio">PAT-1132</span>
+                            </td>
+                            <td>Audiovisual</td>
+                            <td>Beatriz Lima</td>
+                            <td><span class="badge badge-amarelo">Sem atualização</span></td>
+                            <td>Sala de Reunião B</td>
+                        </tr>
+
+                        <!-- Linha 3 -->
+                        <tr>
+                            <td>
+                                <strong>Bomba Hidráulica Reserva</strong><br>
+                                <span class="patrimonio">PAT-3309</span>
+                            </td>
+                            <td>Operações</td>
+                            <td>Carlos Mendes</td>
+                            <td><span class="badge badge-vermelho">Sem localização</span></td>
+                            <td>Não registrada</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
